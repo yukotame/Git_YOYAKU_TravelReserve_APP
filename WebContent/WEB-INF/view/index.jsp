@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="<%=request.getContextPath() %>/css/reset.css">
     <link rel="stylesheet" href="<%=request.getContextPath() %>/css/headerfooter.css">
     <link rel="stylesheet" href="<%=request.getContextPath() %>/css/style.css">
-
     <link rel="stylesheet" href="<%=request.getContextPath() %>/css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -85,12 +83,12 @@
       <header>
           <div class="page-header">
             <div class="header-left">
-              <a href="index.html"><img src="image/top-header-logo.png" alt="花壇温海温泉旅館ロゴ"></a>
+              <a href="InputIndex"><img src="image/top-header-logo.png" alt="花壇温海温泉旅館ロゴ"></a>
               <div class="pc-menu">
                 <ul>
-                  <li><a href="room.html">お部屋</a></li>
-                  <li><a href="cook.html">お料理</a></li>
-                  <li><a href="spa.html">温泉</a></li>
+                  <li><a href="InputRoom">お部屋</a></li>
+                  <li><a href="InputCook">お料理</a></li>
+                  <li><a href="InputSpa">温泉</a></li>
                 </ul>
               </div><!-- pc-menu -->
             </div><!-- header-left -->
@@ -108,9 +106,9 @@
         <span class="material-icons" id="sp-close">close</span>
         <nav>
           <ul>
-            <li><a href="room.html">お部屋</a></li>
-            <li><a href="cook.html">お料理</a></li>
-            <li><a href="spa.html">温泉</a></li>
+            <li><a href="InputRoom">お部屋</a></li>
+            <li><a href="InputCook">お料理</a></li>
+            <li><a href="InputSpa">温泉</a></li>
           </ul>
         </nav>
       </div>
@@ -178,7 +176,7 @@
                ひたすらにゆったりと…。<br>
                最高級の「何もしない時間」をお過ごしください。</p>
              <div class="room-btn">
-              <a href="room.html">お部屋について</a>
+              <a href="InputRoom">お部屋について</a>
              </div><!-- /.room-btn -->
            </div><!-- /.room-contents -->
        </section><!-- /.room -->
@@ -193,7 +191,7 @@
               あなたの人生史に残る「極上の感動」を<br>
               お約束します。</p>
              <div class="cook-btn">
-              <a href="cook.html">料理について</a>
+              <a href="InputCook">料理について</a>
              </div><!-- /.cook-btn -->
            </div><!-- /.cook-contents -->
        </section><!-- /.cook -->
@@ -207,7 +205,7 @@
                現代人の疲弊しきった身体を修復する最高級の湯治場として<br>
                 ご活用ください。</p>
              <div class="spa-btn">
-              <a href="spa.html">温泉について</a>
+              <a href="InputSpa">温泉について</a>
              </div><!-- /.spa-btn -->
            </div><!-- /.spa-contents -->
        </section><!-- /.spa -->
@@ -222,7 +220,7 @@
           </div><!-- title -->
           <div class="plan-contents">
             <div class="plan-content"  data-aos="fade-up" data-aos-delay="600">
-                <a href="index.html"><img src="image/recommended01.jpg" alt="プラン写真１"></a>
+                <a href="InputIndex"><img src="image/recommended01.jpg" alt="プラン写真１"></a>
                 <p>朝食付きプラン、日本近海で取れた<br>
                   のどぐろを朝食として…</p>
                 <p>最高級と称されるのどぐろ、正式には「アカ<br>
@@ -230,7 +228,7 @@
                   いで、焼いても煮ても美味</p>
             </div><!-- /.plan-content -->
             <div class="plan-content"  data-aos="fade-up" data-aos-delay="300">
-                <a href="index.html"><img src="image/recommended02.jpg" alt="プラン写真２"></a>
+                <a href="InputIndex"><img src="image/recommended02.jpg" alt="プラン写真２"></a>
                 <p>【期間限定】熱海蟹をたっぷりと<br>
                    愉しむプラン。</p>
                 <p>温海で水揚げされた蟹は「温海蟹」<br>
@@ -238,7 +236,7 @@
                    きました。この宿泊プランでは存分に</p>
             </div><!-- /.plan-content -->
             <div class="plan-content"  data-aos="fade-up" data-aos-delay="0">
-                <a href="index.html"><img src="image/recommended03.jpg" alt="プラン写真３"></a>
+                <a href="InputIndex"><img src="image/recommended03.jpg" alt="プラン写真３"></a>
                 <p>【平日限定】贅沢美味懐石プラン。<br>
                    海辺の四季旬彩プラン。</p>
                 <p>熱海近海で取れた魚を鮮度そのままに舟盛りに<br>
@@ -367,13 +365,13 @@
   <footer>
     <div class="footer-contents">
       <ul>
-        <li  data-aos="fade-up" data-aos-delay="0"><a href="room.html">お部屋</a></li>
-        <li  data-aos="fade-up" data-aos-delay="200"><a href="cook.html">お料理</a></li>
-        <li  data-aos="fade-up" data-aos-delay="400"><a href="spa.html">温泉</a></li>
+        <li  data-aos="fade-up" data-aos-delay="0"><a href="InputRoom">お部屋</a></li>
+        <li  data-aos="fade-up" data-aos-delay="200"><a href="InputCook">お料理</a></li>
+        <li  data-aos="fade-up" data-aos-delay="400"><a href="InputSpa">温泉</a></li>
       </ul>
       <div class="footer-logo" data-aos="fade-up"
       >
-        <a href="index.html"><img src="image/footer-logo.png" alt="アクセス"></a>
+        <a href="InputIndex"><img src="image/footer-logo.png" alt="アクセス"></a>
       </div><!-- /.footer-logo -->
 
       <div class="info" data-aos="fade-up">
@@ -401,12 +399,11 @@
   <script src="https://unpkg.com/flatpickr"></script>
   <script src="js/jquery-2.1.4.min.js"></script>
 
-  <script src="<%=request.getContextPath() %>/js/main.js"></script>
-  <script src="<%=request.getContextPath() %>/js/anim_aos.js"></script>
-  <script src="<%=request.getContextPath() %>/js/header.js"></script>
-  <script src="<%=request.getContextPath() %>/js/modal.js"></script>
-  <script src="<%=request.getContextPath() %>/js/tab.js"></script>
-  <script src="<%=request.getContextPath() %>/js/input_check.js"></script>
-    <script type="text/javascript" src="js/input-check.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/anim_aos.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/tab.js"></script>
+  <script type="text/javascript" src="js/input-check.js"></script>
   </body>
 </html>

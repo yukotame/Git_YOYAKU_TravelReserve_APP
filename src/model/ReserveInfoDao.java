@@ -37,7 +37,7 @@ public class ReserveInfoDao {
 	/**----------------------------------------------------------------------*
 	 *■doReserveInsertメソッド
 	 *概要　：「RESERVE」テーブルに対象の予約データを挿入する
-	 *引数　：対象のアンケートデータ（ReserveInfoDto型）
+	 *引数　：対象の予約データ（ReserveInfoDto型）
 	 *戻り値：実行結果（真：成功、偽：例外発生）
 	 *----------------------------------------------------------------------**/
 	public boolean doReserveInsert(ReserveInfoDto dto) {

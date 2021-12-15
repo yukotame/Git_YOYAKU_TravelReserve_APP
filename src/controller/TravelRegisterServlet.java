@@ -33,14 +33,14 @@ public class TravelRegisterServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+		doPost(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+
 
 		System.out.println("TravelRegisterServlet");
 
@@ -49,6 +49,15 @@ public class TravelRegisterServlet extends HttpServlet {
 		String email = request.getParameter("your-e-mail");     //リクエストパラメータ（PASSWORD）
 		String plan_id = request.getParameter("your-plan");     //リクエストパラメータ（PASSWORD）
 		String plan_period = request.getParameter("datepicker");     //リクエストパラメータ（PASSWORD）
+
+		System.out.println("userName" + userName);
+		System.out.println("email" + email);
+		System.out.println("plan_id" + plan_id);
+		System.out.println("plan_period" + plan_period);
+
+
+
+
 
 		String plan_period_from = "";
 		String work_plan_period_to = "";
@@ -62,6 +71,9 @@ public class TravelRegisterServlet extends HttpServlet {
 				work_plan_period_to = plan_period.substring(plan_period.length() - 14);
 				plan_period_to = work_plan_period_to.substring(0,10);
 
+				System.out.println("plan_period_from" + plan_period_from);
+				System.out.println("plan_period_to" + plan_period_to);
+
 			}
 
 		} catch(Exception e) {
@@ -69,12 +81,6 @@ public class TravelRegisterServlet extends HttpServlet {
 		}
 
 
-		System.out.println("userName" + userName);
-		System.out.println("email" + email);
-		System.out.println("plan_id" + plan_id);
-		System.out.println("plan_period" + plan_period);
-		System.out.println("plan_period_from" + plan_period_from);
-		System.out.println("plan_period_to" + plan_period_to);
 
 
 
@@ -87,7 +93,7 @@ public class TravelRegisterServlet extends HttpServlet {
 
 		rdto.setTime( new Timestamp(System.currentTimeMillis()) );   //現在時刻を更新時刻として設定
 
-		//アンケートデータをDBに登録
+		//予約データをDBに登録
 		TravelRegisterBL logic = new TravelRegisterBL();
 		succesFlg          = logic.executeInsertProject(rdto);  //成功フラグ（true:成功/false:失敗）
 
@@ -96,7 +102,7 @@ public class TravelRegisterServlet extends HttpServlet {
 	//成功/失敗に応じて表示させる画面を振り分ける
 	if (succesFlg) {
 
-		//成功した場合、回答完了画面（finish.html）を表示する
+		//成功した場合、登録完了画面（finish.html）を表示する
 		response.sendRedirect("htmls/finish.html");
 
 	} else {

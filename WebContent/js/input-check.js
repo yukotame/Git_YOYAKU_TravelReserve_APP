@@ -9,7 +9,7 @@
 	var elmCal = document.getElementById("myCal");
 
 
-	//宿泊予約の入力チェック
+
 	elmSUBMIT.onclick = function(){
 
 

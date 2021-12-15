@@ -8,9 +8,9 @@ public class TravelRegisterBL {
 
 	/**----------------------------------------------------------------------*
 	 *■executeInsertProjectメソッド
-	 *概要  ：プロジェクト情報「PROJECT」テーブルに登録し、プロジェクト日程情報を「PROJECT_DATE」テーブルに登録する
-	 *引数  ：プロジェクト情報とプロジェクト日程情報（ユーザー入力 ProjectPackDto型）
-	 *戻り値：「PROJECT_DATE」テーブルから発番されたPROJECT_ID（int型）
+	 *概要  ：プロジェクト情報「RESERVE」テーブルに登録する。
+	 *引数  ：予約情報（ユーザー入力 ReserveInfoDto型）
+	 *戻り値：実行結果（真：成功、偽：例外発生）
 	 *----------------------------------------------------------------------**/
 	public boolean executeInsertProject(ReserveInfoDto rdto) {
 

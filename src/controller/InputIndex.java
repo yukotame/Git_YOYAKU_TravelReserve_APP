@@ -27,7 +27,10 @@ public class InputIndex extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-
+			//レスポンス（出力データ）の文字コードを設定
+			response.setContentType("text/html;charset=UTF-8");  //文字コードをUTF-8で設定
+			//リクエスト（受信データ）の文字コードを設定
+			request.setCharacterEncoding("UTF-8");                  //文字コードをUTF-8で設定
 
 			//HTML文書（ログイン画面）の出力
 			//Viewにフォワード（フォワード先：login.jsp）
